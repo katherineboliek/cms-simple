@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Blog - <%= post.title %></title>
+        <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,400italic|Source+Serif+Pro' rel='stylesheet' type='text/css'>
+    </head>
+    <body>
+      <h1><%= post.title %></h1>
+      <p>By <%= post.author %> <span class="date">Posted on <%= post.date %></span> <span><%= post.category %></span></p>
+      <img src="<%= post.link %>" class="image"/>
+      <p class="content"><%= post.content %></p>
+      <h3><a href="/posts/edit/<%= post.custom %>">Edit Post</a></h3>
+    </body>
+</html>

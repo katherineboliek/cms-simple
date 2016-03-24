@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Blog - Edit <%= post.title %></title>
+        <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,400italic|Source+Serif+Pro' rel='stylesheet' type='text/css'>
+    </head>
+    <body>
+        <h1>Edit Post</h1>
+        <form action="/posts/<%= post.custom %>" method="POST">
+            <p>
+            <label>Title</label>
+            <input type="text" id="title" name="title" value="<%= post.title %>" required/>
+            </p>
+
+            <p>
+            <label>Custom URL</label>
+            <input type="text" id="custom" name="custom" value="<%= post.custom %>" required/>
+            </p>
+
+            <p>
+            <label>Author</label>
+            <input type="text" id="author" name="author" value="<%= post.author %>" />
+            </p>
+
+            <p>
+            <label>Category</label>
+            <input type="text" id="category" name="category" value="<%= post.category %>" />
+            </p>
+
+            <p>
+            <label>Content</label>
+            <input type="text" id="content" name="content" value="<%= post.content %>" />
+            </p>
+
+            <p>
+            <label>Thumbnail Image</label>
+            <input type="text" id="link" name="link" value="<%= post.link %>" />
+            </p>
+
+            <button>Update</button>
+            <p><a href="/posts/delete/<%= post.custom %>">Delete</a></p>
+        </form>
+    </body>
+</html>
