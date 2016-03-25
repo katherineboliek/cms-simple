@@ -15,13 +15,14 @@
           <p>Here at The Recipe Box, we believe in sharing all our best recipes and cooking stories with each other. Please feel free to add to the collection and browse what is already here.</p>
         </div>
       </div>
+      <div class="container">
         <% if (posts.length) { %>
             <% for (var i in posts) { %>
-        <div class="container">
               <div class="row list">
                 <div class="col-sm-3"><div class="thumb"><img src="<%= posts[i].link %>" class="img-responsive"/></div></div>
                 <div class="col-sm-9">
                   <h1><a href="/posts/<%= posts[i].custom %>"><%= posts[i].title %></a></h1>
+                  <p><%= posts[i].date %></p>
                 </div>
               </div>
             <% } %>
@@ -32,6 +33,9 @@
         <div class="butn"><a href="/post/new" class="butntext">New Post</a></div>
       </div>
       <footer>
+        <div class="container">
+          <p class="foot">This was made for a class project. Visit my <a href="https://github.com/katherineboliek/cms-simple">github</a> to learn more.</p>
+        </div>
       </footer>
     </body>
 </html>

@@ -43,9 +43,14 @@
             <input type="text" id="link" name="link" value="<%= post.link %>" />
             </p>
 
-            <button>Update</button>
-            <p><a href="/posts/delete/<%= post.custom %>">Delete</a></p>
+            <button class="butn">Update</button>
+            <span class="butn"><a href="/posts/delete/<%= post.custom %>" class="butntext">Delete</a></span>
         </form>
       </div>
+      <footer>
+        <div class="container">
+          <p class="foot">This was made for a class project. Visit my <a href="https://github.com/katherineboliek/cms-simple">github</a> to learn more.</p>
+        </div>
+      </footer>
     </body>
 </html>

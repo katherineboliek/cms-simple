@@ -17,7 +17,12 @@
         <h1><%= post.title %></h1>
         <p class="info">By <%= post.author %> <span class="date">Posted on <%= post.date %></span> <span><%= post.category %></span></p>
         <p class="content"><%= post.content %></p>
-        <h3><a href="/posts/edit/<%= post.custom %>">Edit Post</a></h3>
+        <div class="butn"><a href="/posts/edit/<%= post.custom %>" class="butntext">Edit Post</a></div>
       </div>
+      <footer>
+        <div class="container">
+          <p class="foot">This was made for a class project. Visit my <a href="https://github.com/katherineboliek/cms-simple">github</a> to learn more.</p>
+        </div>
+      </footer>
     </body>
 </html>

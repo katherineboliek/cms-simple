@@ -32,7 +32,7 @@ a:hover {
 
 .intro {
   font-size: 1.8em;
-  padding: 2em 0 1.7em 0;
+  padding: 2em 0 1.5em 0;
   background-color: #E06C9F;
   margin-bottom: 20px;
 }
@@ -48,7 +48,7 @@ a:hover {
 }
 
 .date{
-  color: blue;
+  color: #E06C9F;
 }
 
 .butn {
@@ -57,7 +57,7 @@ a:hover {
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 700;
   text-transform: uppercase;
-  margin-top: 20px;
+  margin: 20px 0 20px 0;
 }
 
 .butntext {
@@ -84,12 +84,27 @@ a:hover {
 }
 
 #logo {
-    width: 20%;
-    margin: 0 auto;
+  width: 20%;
+  margin: 0 auto;
+}
+
+.list {
+  margin-bottom: 15px;
 }
 
 footer {
   background-color: #83BCFF;
+  margin-top: 20px;
+}
+
+footer p, footer a {
+  color: #fff;
+  margin: 10px 0 10px 0;
+  text-align: center;
+}
+
+footer a:hover {
+  color: #fff;
 }
 
 /*header image media queries*/
