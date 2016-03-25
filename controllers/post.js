@@ -56,7 +56,7 @@ exports.create = function(req, res) {
     //note about xss and sanitization
     collection.insert({
         title: req.body.title,
-        date: new Date(),
+        date: new Date("<YYYY-mm-dd>"),
         custom: req.body.custom,
         author: req.body.author,
         category: req.body.category,

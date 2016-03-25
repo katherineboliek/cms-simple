@@ -12,42 +12,43 @@
       </div>
       <div class="container">
         <h1>New Post</h1>
+        <div class="newpost">
+          <form action="/posts" method="POST">
 
-        <form action="/posts" method="POST">
+              <p>
+              <label>Title</label>
+              <input type="text" id="title" name="title" value="" placeholder="Roasted Chicken" required/>
+              </p>
 
-            <p>
-            <label>Title</label>
-            <input type="text" id="title" name="title" value="" required/>
-            </p>
+              <p>
+              <label>Custom URL</label>
+              <input type="text" id="custom" name="custom" placeholder="how-to-roast-chicken" value="" required/>
+              </p>
 
-            <p>
-            <label>Custom URL</label>
-            <input type="text" id="custom" name="custom" value="" required/>
-            </p>
+              <p>
+              <label>Author</label>
+              <input type="text" id="author" name="author" placeholder="John Doe" value="" />
+              </p>
 
-            <p>
-            <label>Author</label>
-            <input type="text" id="author" name="author" value="" />
-            </p>
+              <p>
+              <label>Category</label>
+              <input type="text" id="category" name="category" placeholder="meat" value="" />
+              </p>
 
-            <p>
-            <label>Category</label>
-            <input type="text" id="category" name="category" value="" />
-            </p>
+              <p>
+              <label>Content</label>
+              <input type="text" id="content" name="content" placeholder="The key to a good roasted chicken is..." value="" />
+              </p>
 
-            <p>
-            <label>Content</label>
-            <input type="text" id="content" name="content" value="" />
-            </p>
+              <p>
+              <label>Thumbnail Image</label>
+              <input type="text" id="link" name="link" placeholder="https://upload.wikimedia.org/wikipedia/commons/b/b1/Roasted_Chicken,_Butterflied,_on_Potatoes,_Baking_Pan_Close_UP.jpg" value="" />
+              </p>
 
-            <p>
-            <label>Thumbnail Image</label>
-            <input type="text" id="link" name="link" value="" />
-            </p>
+              <button class="butn">Create</button>
 
-            <button class="butn">Create</button>
-
-        </form>
+          </form>
+        </div>
       </div>
       <footer>
         <div class="container">
