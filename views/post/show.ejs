@@ -2,9 +2,15 @@
 <html>
     <head>
         <title>Blog - Edit <%= post.title %></title>
+        <link href='/css/bootstrap.css' rel='stylesheet' type='text/css'>
+        <link href='/css/main.css' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,400italic|Source+Serif+Pro' rel='stylesheet' type='text/css'>
     </head>
     <body>
+      <div id="navigation">
+        <div id="logo"><img src="/img/recipe-box.png" class="img-responsive"/></div>
+      </div>
+      <div class="container">
         <h1>Edit Post</h1>
         <form action="/posts/<%= post.custom %>" method="POST">
             <p>
@@ -40,5 +46,6 @@
             <button>Update</button>
             <p><a href="/posts/delete/<%= post.custom %>">Delete</a></p>
         </form>
+      </div>
     </body>
 </html>

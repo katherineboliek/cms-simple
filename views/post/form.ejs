@@ -2,9 +2,15 @@
 <html>
     <head>
         <title>Blog - New Post</title>
+        <link href='/css/bootstrap.css' rel='stylesheet' type='text/css'>
+        <link href='/css/main.css' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,400italic|Source+Serif+Pro' rel='stylesheet' type='text/css'>
     </head>
     <body>
+      <div id="navigation">
+        <div id="logo"><img src="/img/recipe-box.png" class="img-responsive"/></div>
+      </div>
+      <div class="container">
         <h1>New Post</h1>
 
         <form action="/posts" method="POST">
@@ -42,6 +48,6 @@
             <button>Create</button>
 
         </form>
-
+      </div>
     </body>
 </html>

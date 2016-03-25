@@ -2,13 +2,22 @@
 <html>
     <head>
         <title>Blog - <%= post.title %></title>
+        <link href='/css/bootstrap.css' rel='stylesheet' type='text/css'>
+        <link href='/css/main.css' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,400italic|Source+Serif+Pro' rel='stylesheet' type='text/css'>
     </head>
     <body>
-      <h1><%= post.title %></h1>
-      <p>By <%= post.author %> <span class="date">Posted on <%= post.date %></span> <span><%= post.category %></span></p>
-      <img src="<%= post.link %>" class="image"/>
-      <p class="content"><%= post.content %></p>
-      <h3><a href="/posts/edit/<%= post.custom %>">Edit Post</a></h3>
+      <div id="navigation">
+        <div id="logo"><img src="/img/recipe-box.png" class="img-responsive"/></div>
+      </div>
+      <div class="container">
+        <div class="headerimage">
+          <img src="<%= post.link %>" class="img-responsive"/>
+        </div>
+        <h1><%= post.title %></h1>
+        <p class="info">By <%= post.author %> <span class="date">Posted on <%= post.date %></span> <span><%= post.category %></span></p>
+        <p class="content"><%= post.content %></p>
+        <h3><a href="/posts/edit/<%= post.custom %>">Edit Post</a></h3>
+      </div>
     </body>
 </html>

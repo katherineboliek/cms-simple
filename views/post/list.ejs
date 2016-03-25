@@ -2,18 +2,36 @@
 <html>
     <head>
         <title>Blog - Posts</title>
+        <link href='/css/bootstrap.css' rel='stylesheet' type='text/css'>
+        <link href='/css/main.css' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,400italic|Source+Serif+Pro' rel='stylesheet' type='text/css'>
     </head>
     <body>
-        <h1>Katherine's Blog</h1>
+      <div id="navigation">
+        <div id="logo"><img src="/img/recipe-box.png" class="img-responsive"/></div>
+      </div>
+      <div class="intro">
+        <div class="container">
+          <p>Here at The Recipe Box, we believe in sharing all our best recipes and cooking stories with each other. Please feel free to add to the collection and browse what is already here.</p>
+        </div>
+      </div>
         <% if (posts.length) { %>
             <% for (var i in posts) { %>
-            <h2><a href="/posts/<%= posts[i].custom %>"><%= posts[i].title %></a></h2>
+        <div class="container">
+              <div class="row list">
+                <div class="col-sm-3"><div class="thumb"><img src="<%= posts[i].link %>" class="img-responsive"/></div></div>
+                <div class="col-sm-9">
+                  <h1><a href="/posts/<%= posts[i].custom %>"><%= posts[i].title %></a></h1>
+                </div>
+              </div>
             <% } %>
         <% } else { %>
         <p>Add a post to begin.</p>
         <% } %>
 
-        <p><a href="/post/new">New Post</a></p>
+        <div class="butn"><a href="/post/new" class="butntext">New Post</a></div>
+      </div>
+      <footer>
+      </footer>
     </body>
 </html>
